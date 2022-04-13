@@ -1,0 +1,1 @@
+import{n as _,b as e}from"./assets/index.624fdb56.js";const s={};var c=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("div",[n._v("about")])},l=[];const o={};var r=_(s,c,l,!1,i,null,null,null);function i(n){for(let t in o)this[t]=o[t]}typeof e=="function"&&e(r);var f=function(){return r.exports}();export{f as default};
