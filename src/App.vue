@@ -10,7 +10,6 @@ watch(currentRoute, (route) => {
 }, { immediate: true })
 </script>
 
-
 <template>
   <div font-sans flex="~ col" h-full overflow-auto>
     <app-header />
