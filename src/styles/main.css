@@ -1,0 +1,38 @@
+html, body, #app {
+  @apply h-full min-h-full antialiased;
+}
+
+body {
+  @apply theme-container;
+}
+
+::-webkit-scrollbar {
+  @apply w-12px;
+}
+
+::-webkit-scrollbar:horizontal {
+  @apply h-10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb {
+  @apply rounded-xl;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  @apply bg-true-gray-500/10;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-true-gray-500/10;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-true-gray-500/30;
+}
+
+::-webkit-scrollbar-thumb:active {
+  @apply bg-true-gray-500/20;
+}
+
