@@ -12,30 +12,30 @@
     "taze:update": "npx taze major -w --exclude vue,vue-router && npx taze patch -r --include vue,vue-router && pnpm i"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.4.9",
-    "@vueuse/core": "^8.2.5",
+    "@vue/composition-api": "^1.6.1",
+    "@vueuse/core": "^8.4.2",
     "vue": "2.6.14",
     "vue-router": "3.5.3"
   },
   "devDependencies": {
     "@byyuurin/eslint-config": "^0.5.1",
-    "@iconify/json": "^2.1.28",
-    "@unocss/reset": "^0.31.2",
-    "@unocss/transformer-directives": "^0.31.2",
+    "@iconify/json": "^2.1.38",
+    "@unocss/reset": "^0.32.13",
+    "@unocss/transformer-directives": "^0.32.13",
     "@vue/runtime-core": "latest",
     "@vue/runtime-dom": "latest",
-    "eslint": "^8.13.0",
-    "pnpm": "^6.32.6",
-    "typescript": "^4.6.3",
-    "unocss": "^0.31.2",
+    "eslint": "^8.15.0",
+    "pnpm": "^7.0.0",
+    "typescript": "^4.6.4",
+    "unocss": "^0.32.13",
     "unplugin-auto-import": "^0.7.1",
-    "unplugin-vue-components": "^0.19.2",
+    "unplugin-vue-components": "^0.19.3",
     "unplugin-vue2-script-setup": "^0.10.2",
-    "vite": "^2.9.1",
-    "vite-plugin-pages": "^0.22.0",
-    "vite-plugin-vue2": "^1.9.3",
-    "vitest": "^0.9.3",
+    "vite": "^2.9.8",
+    "vite-plugin-pages": "^0.23.0",
+    "vite-plugin-vue2": "^2.0.0",
+    "vitest": "^0.10.5",
     "vue-template-compiler": "^2.6.14",
-    "vue-tsc": "^0.34.6"
+    "vue-tsc": "^0.34.11"
   }
 }

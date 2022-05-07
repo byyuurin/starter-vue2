@@ -1,3 +1,6 @@
 {
-  "extends": "@byyuurin"
+  "extends": "@byyuurin",
+  "rules": {
+    "vue/no-multiple-template-root": "error"
+  }
 }
