@@ -8,33 +8,33 @@
     "lint": "eslint \"src/**/*.{vue,ts,js}\"",
     "typecheck": "vue-tsc --noEmit",
     "test": "vitest",
-    "taze": "npx taze major --exclude vue,vue-router && npx taze patch --include vue,vue-router",
-    "taze:update": "npx taze major -w --exclude vue,vue-router && npx taze patch -r --include vue,vue-router && pnpm i"
+    "taze": "npx taze major --exclude vue,vue-template-compiler,vue-router,vite && npx taze patch --include vue,vue-template-compiler,vue-router,vite",
+    "taze:update": "npx taze major -w --exclude vue,vue-template-compiler,vue-router,vite && npx taze patch -w --include vue,vue-template-compiler,vue-router,vite && pnpm i"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.6.1",
-    "@vueuse/core": "^8.4.2",
+    "@vue/composition-api": "^1.7.0",
+    "@vueuse/core": "^8.9.2",
     "vue": "2.6.14",
-    "vue-router": "3.5.3"
+    "vue-router": "3.5.4"
   },
   "devDependencies": {
-    "@byyuurin/eslint-config": "^0.5.1",
-    "@iconify/json": "^2.1.40",
-    "@unocss/reset": "^0.33.2",
-    "@unocss/transformer-directives": "^0.33.2",
+    "@byyuurin/eslint-config": "^0.6.1",
+    "@iconify/json": "^2.1.77",
+    "@unocss/reset": "^0.44.2",
+    "@unocss/transformer-directives": "^0.44.2",
     "@vue/runtime-dom": "latest",
-    "eslint": "^8.15.0",
-    "pnpm": "^7.0.1",
-    "typescript": "^4.6.4",
-    "unocss": "^0.33.2",
-    "unplugin-auto-import": "^0.7.1",
-    "unplugin-vue-components": "^0.19.5",
-    "unplugin-vue2-script-setup": "^0.10.2",
-    "vite": "^2.9.8",
-    "vite-plugin-pages": "^0.23.0",
-    "vite-plugin-vue2": "^2.0.0",
-    "vitest": "^0.12.4",
-    "vue-template-compiler": "^2.6.14",
-    "vue-tsc": "^0.34.12"
+    "eslint": "^8.19.0",
+    "pnpm": "^7.5.2",
+    "typescript": "^4.7.4",
+    "unocss": "^0.44.2",
+    "unplugin-auto-import": "^0.9.3",
+    "unplugin-vue-components": "^0.21.1",
+    "unplugin-vue2-script-setup": "^0.11.2",
+    "vite": "^2.9.14",
+    "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-vue2": "^2.0.1",
+    "vitest": "^0.18.0",
+    "vue-template-compiler": "2.6.14",
+    "vue-tsc": "^0.38.5"
   }
 }
