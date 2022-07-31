@@ -43,7 +43,6 @@ You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/
 - [Vue Router](https://github.com/vuejs/vue-router)
   - [vite-plugin-pages](https://github.com/hannoeru/vite-plugin-pages) - file system based routing
 - [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) - directly use Vue Composition API and others without importing
-- [unplugin-vue2-script-setup](https://github.com/antfu/unplugin-vue2-script-setup) - bring `<script setup>` to Vue 2.
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) - components auto import
 - [VueUse](https://github.com/antfu/vueuse) - collection of essential Vue Composition Utilities
 

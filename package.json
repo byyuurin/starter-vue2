@@ -8,34 +8,30 @@
     "lint": "eslint .",
     "lintf": "eslint . --fix",
     "typecheck": "vue-tsc --noEmit",
-    "test": "vitest",
-    "taze": "npx taze major --exclude vue,vue-template-compiler,vue-router,vite && npx taze patch --include vue,vue-template-compiler,vue-router,vite",
-    "taze:update": "npx taze major -w --exclude vue,vue-template-compiler,vue-router,vite && npx taze patch -w --include vue,vue-template-compiler,vue-router,vite && pnpm i"
+    "test": "vitest"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.7.0",
     "@vueuse/core": "^9.0.2",
-    "vue": "2.6.14",
-    "vue-router": "3.5.4"
+    "vue": "^2.7.8",
+    "vue-router": "^3.5.4"
   },
   "devDependencies": {
     "@byyuurin/eslint-config": "^0.8.4",
     "@iconify/json": "^2.1.85",
     "@unocss/reset": "^0.45.1",
     "@unocss/transformer-directives": "^0.45.1",
-    "@vue/runtime-dom": "latest",
+    "@vitejs/plugin-vue2": "^1.1.2",
+    "@vue/compiler-sfc": "^3.2.37",
     "eslint": "^8.20.0",
     "pnpm": "^7.7.1",
     "typescript": "^4.7.4",
     "unocss": "^0.45.1",
     "unplugin-auto-import": "^0.10.3",
     "unplugin-vue-components": "^0.21.2",
-    "unplugin-vue2-script-setup": "^0.11.3",
-    "vite": "^2.9.14",
+    "vite": "^3.0.4",
     "vite-plugin-pages": "^0.25.0",
-    "vite-plugin-vue2": "^2.0.2",
     "vitest": "^0.19.1",
-    "vue-template-compiler": "2.6.14",
+    "vue-demi": "^0.13.6",
     "vue-tsc": "^0.39.2"
   },
   "eslintConfig": {

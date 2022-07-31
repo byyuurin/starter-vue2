@@ -3,8 +3,7 @@ import { defineConfig } from 'vite'
 import autoImport from 'unplugin-auto-import/vite'
 import unocss from 'unocss/vite'
 import pages from 'vite-plugin-pages'
-import { createVuePlugin as vue } from 'vite-plugin-vue2'
-import vueScriptSetup from 'unplugin-vue2-script-setup/vite'
+import vue from '@vitejs/plugin-vue2'
 import vueComponents from 'unplugin-vue-components/vite'
 import build from './vite.build'
 
@@ -12,13 +11,12 @@ import build from './vite.build'
 export default defineConfig({
   plugins: [
     autoImport({
-      imports: ['@vue/composition-api', '@vueuse/core'],
+      imports: ['vue', '@vueuse/core'],
       dts: './src/auto-imports.d.ts',
     }),
     unocss(),
     pages(),
     vue(),
-    vueScriptSetup(),
     vueComponents({ dts: './src/components.d.ts', types: [] }),
   ],
   build,

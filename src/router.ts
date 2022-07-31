@@ -31,11 +31,20 @@ export function useRoute() {
 
 Vue.use(VueRouter)
 
+export const title = ref('')
+
 const routes = createRoutes()
 const router = new VueRouter({
   mode: 'history',
   base: import.meta.env.BASE_URL,
   routes,
+})
+
+router.beforeEach((to, from, next) => {
+  if (to.meta?.title)
+    title.value = to.meta.title as string
+
+  next()
 })
 
 export default router
