@@ -13,6 +13,6 @@ watch(currentRoute, (route) => {
 <template>
   <div bg-base color-base font-sans min-h-full>
     <AppHeader />
-    <router-view />
+    <RouterView />
   </div>
 </template>
