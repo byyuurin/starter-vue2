@@ -8,7 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AppHeader: typeof import('./components/AppHeader.vue')['default']
+    AppThemeToggle: typeof import('./components/AppThemeToggle.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
   }
 }
