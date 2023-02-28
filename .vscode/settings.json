@@ -3,6 +3,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
   },
+  "eslint.validate": ["json", "jsonc", "yml", "yaml"],
   "css.lint.unknownAtRules": "ignore",
   "css.customData": [".vscode/unocss.css-data.json"],
 }
