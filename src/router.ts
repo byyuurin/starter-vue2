@@ -1,6 +1,6 @@
+import recordRaws from 'virtual:generated-pages'
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import recordRaws from 'virtual:generated-pages'
 
 function createRoutes() {
   return recordRaws.sort((a, b) => {

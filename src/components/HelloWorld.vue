@@ -15,7 +15,10 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
     <div p-4 py-8>
       <div p-4 flex="~ gap-2" justify-center items-start>
         <button
-          btn="~" type="button" :class="buttonColor" @click="count++"
+          btn="~"
+          type="button"
+          :class="buttonColor"
+          @click="count++"
         >
           count is: {{ count }}
         </button>
@@ -46,18 +49,18 @@ const buttonColor = computed(() => colors[Math.floor(count.value / 3)] || 'btn-b
 
 <style scoped>
 h1 {
-  --uno: text-4xl leading-2em;
+  --uno: "text-4xl leading-2em";
 }
 
 p {
-  --uno: leading-2em;
+  --uno: "leading-2em";
 }
 
 a {
-  --uno: text-vue;
+  --uno: "text-vue";
 }
 
 code {
-  --uno: bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px;
+  --uno: "bg-gray-500/10 dark:bg-gray-500/25 text-[#304455] dark:text-light-900 p-4px py-2px rounded-4px";
 }
 </style>

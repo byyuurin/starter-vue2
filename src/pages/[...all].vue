@@ -5,6 +5,7 @@ meta:
 
 <script setup lang="ts">
 import { useRouter } from '/src/router'
+
 const router = useRouter()
 </script>
 

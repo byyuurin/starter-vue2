@@ -22,7 +22,7 @@ meta:
 
 <style lang="postcss">
 .logo {
-  --uno: inline-block h-24 p-6 box-content;
+  --uno: "inline-block h-24 p-6 box-content";
 
   will-change: filter;
 }

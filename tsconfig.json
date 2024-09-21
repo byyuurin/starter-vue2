@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
     "useDefineForClassFields": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "strict": true,
-    "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "noUnusedLocals": true,
-    "lib": ["esnext", "dom"],
     "paths": {
       "/*": ["./*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "esModuleInterop": true
   },
   "vueCompilerOptions": {
     "target": 2.7
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }

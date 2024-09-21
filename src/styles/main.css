@@ -1,5 +1,7 @@
-html, body, #app {
-  --uno: h-full min-h-full antialiased;
+html,
+body,
+#app {
+  --uno: "h-full min-h-full antialiased";
 }
 
 html {
@@ -11,27 +13,26 @@ html {
 }
 
 ::-webkit-scrollbar {
-  --uno: w-12px bg-transparent;
+  --uno: "w-12px bg-transparent";
 }
 
 ::-webkit-scrollbar:horizontal {
-  --uno: h-10px;
+  --uno: "h-10px";
 }
 
 ::-webkit-scrollbar-track,
 ::-webkit-scrollbar-corner,
 ::-webkit-scrollbar-thumb {
-  --uno: rounded-xl;
+  --uno: "rounded-xl";
 }
 
 ::-webkit-scrollbar-thumb {
-  --uno: border-3 border-transparent bg-true-gray-500/10 bg-clip-content;
+  --uno: "border-3 border-transparent bg-true-gray-500/10 bg-clip-content";
 }
 ::-webkit-scrollbar-thumb:hover {
-  --uno: bg-true-gray-500/25;
+  --uno: "bg-true-gray-500/25";
 }
 
 ::-webkit-scrollbar-thumb:active {
-  --uno: bg-true-gray-500/40;
+  --uno: "bg-true-gray-500/40";
 }
-
