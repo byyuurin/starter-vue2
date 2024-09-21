@@ -7,6 +7,9 @@ export default byyuurin(
         singleQuote: false,
       },
     },
+    vue: {
+      vueVersion: 2,
+    },
   },
   {
     files: ['src/*.d.ts'],
