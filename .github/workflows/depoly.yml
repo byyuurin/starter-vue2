@@ -12,13 +12,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: pnpm/action-setup@v4
-        with:
-          run_install: false
+      - run: corepack enable
 
       - uses: actions/setup-node@v4
         with:
-          node-version: v20
+          node-version: v18
           cache: pnpm
 
       - run: |
@@ -26,7 +24,7 @@ jobs:
           npx vite build --base=/${{ github.event.repository.name }}/
           cp dist/index.html dist/404.html
 
-      - uses: peaceiris/actions-gh-pages@v4
+      - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
