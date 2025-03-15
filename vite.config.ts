@@ -9,14 +9,19 @@ import build from './vite.build'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    // https://github.com/antfu/unplugin-auto-import
     autoImport({
-      imports: ['vue', '@vueuse/core'],
-      dts: './src/auto-imports.d.ts',
+      imports: ['vue', 'vue-router', '@vueuse/core'],
+      dts: './src/typed-imports.d.ts',
     }),
+    // https://github.com/unocss/unocss
     unocss(),
+    // https://github.com/hannoeru/vite-plugin-pages
     pages(),
+    // https://github.com/vitejs/vite-plugin-vue2
     vue(),
-    vueComponents({ dts: './src/components.d.ts', types: [] }),
+    // https://github.com/antfu/unplugin-vue-components
+    vueComponents({ dts: './src/typed-components.d.ts' }),
   ],
   build,
 })
